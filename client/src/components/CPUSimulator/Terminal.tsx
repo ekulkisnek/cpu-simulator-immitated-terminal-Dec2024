@@ -36,7 +36,10 @@ export function Terminal({ onCommand }: TerminalProps) {
       if (input.trim()) {
         addLine(`$ ${input}`, 'input');
         setCommandHistory(prev => [...prev, input]);
-        onCommand(input);
+        const result = onCommand(input);
+        if (result) {
+          addLine(result, 'output');
+        }
         setInput('');
         setHistoryIndex(-1);
       }

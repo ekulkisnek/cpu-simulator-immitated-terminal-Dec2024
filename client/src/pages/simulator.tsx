@@ -69,6 +69,15 @@ export default function Simulator() {
         setMetrics(cpu.getMetrics());
         result = 'Loaded example program';
         break;
+      case 'help':
+        result = 'Available commands:\n' +
+          '- load <file>: Load program from file\n' +
+          '- run: Start program execution\n' +
+          '- stop: Stop program execution\n' +
+          '- step: Execute one cycle\n' +
+          '- reset: Reset CPU state\n' +
+          '\nExample files: example1.asm, example2.asm, example3.asm';
+        break;
       default:
         result = 'Unknown command. Type "help" for available commands';
     }

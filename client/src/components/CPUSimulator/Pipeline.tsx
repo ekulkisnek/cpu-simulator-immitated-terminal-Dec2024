@@ -20,10 +20,10 @@ export function Pipeline({ stages }: PipelineProps) {
     const svg = d3.select(svgRef.current);
     svg.selectAll("*").remove();
 
-    const width = 800;
-    const height = 200;
-    const stageWidth = width / 5;
-    const stageHeight = height * 0.6;
+    const width = 300;
+    const height = 600;
+    const stageHeight = height / 5;
+    const stageWidth = width * 0.8;
 
     svg
       .attr("width", width)
@@ -34,7 +34,7 @@ export function Pipeline({ stages }: PipelineProps) {
     stages.forEach((stage, i) => {
       const g = svg
         .append("g")
-        .attr("transform", `translate(${i * stageWidth + 10}, ${height * 0.2})`);
+        .attr("transform", `translate(10, ${i * stageHeight + 10})`);
 
       // Stage box
       g.append("rect")
