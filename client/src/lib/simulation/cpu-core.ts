@@ -37,9 +37,19 @@ export class CPUCore {
     this.cycle++;
     const memOp = this.pipeline.step();
 
-    // Handle memory operations
+    // Handle memory operations with realistic address patterns
     if (memOp) {
-      const addr = `0x${Math.floor(Math.random() * 0xFFFF).toString(16)}`;
+      let addr;
+      if (memOp.address) {
+        // Use instruction's address if provided
+        addr = `0x${memOp.address.toString(16)}`;
+      } else {
+        // Generate sequential access pattern with occasional jumps
+        const baseAddr = (this.cycle * 4) % 0x1000; // Sequential access
+        const offset = memOp.type === 'store' ? 0x100 : 0; // Different regions for loads/stores
+        addr = `0x${(baseAddr + offset).toString(16)}`;
+      }
+      
       if (memOp.type === 'load') {
         this.l1DCache.access(addr, false);
       } else if (memOp.type === 'store') {
