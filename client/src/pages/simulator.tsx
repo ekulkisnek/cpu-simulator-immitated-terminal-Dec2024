@@ -35,21 +35,27 @@ export default function Simulator() {
 
   const handleCommand = (command: string) => {
     const [cmd, ...args] = command.split(' ');
+    let result = '';
 
     switch (cmd) {
       case 'run':
         setRunning(true);
+        result = 'Started program execution';
         break;
       case 'stop':
         setRunning(false);
+        result = 'Stopped program execution';
         break;
       case 'reset':
         cpu.reset();
         setMetrics(cpu.getMetrics());
+        result = 'CPU state reset';
         break;
       case 'step':
         cpu.step();
-        setMetrics(cpu.getMetrics());
+        const metrics = cpu.getMetrics();
+        setMetrics(metrics);
+        result = `Executed one cycle. Current instruction: ${metrics.currentInstruction || 'None'}`;
         break;
       case 'load':
         const program = [
@@ -61,10 +67,13 @@ export default function Simulator() {
         ];
         cpu.loadProgram(program);
         setMetrics(cpu.getMetrics());
+        result = 'Loaded example program';
         break;
       default:
-        console.log('Unknown command:', command);
+        result = 'Unknown command. Type "help" for available commands';
     }
+    
+    return result;
   };
 
   return (

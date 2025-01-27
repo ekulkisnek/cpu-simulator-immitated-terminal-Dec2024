@@ -1,4 +1,3 @@
-
 import { Card } from '@/components/ui/card';
 
 const AVAILABLE_COMMANDS = [
@@ -54,24 +53,6 @@ export function Commands() {
               </div>
               <div className="text-sm text-gray-500">{cmd.details}</div>
             </div>
-          </div>
-        ))}
-      </div>
-    </Card>
-  );
-}
-
-export function Commands() {
-  return (
-    <Card className="p-4">
-      <h3 className="text-lg font-semibold mb-4">Available Commands</h3>
-      <div className="space-y-2">
-        {AVAILABLE_COMMANDS.map((cmd) => (
-          <div key={cmd.command} className="flex items-start">
-            <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">
-              {cmd.command}
-            </code>
-            <span className="ml-3 text-sm text-gray-600">{cmd.description}</span>
           </div>
         ))}
       </div>
