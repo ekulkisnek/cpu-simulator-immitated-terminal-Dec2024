@@ -1,0 +1,120 @@
+Comprehensive CPU Simulator Architecture & Implementation Details
+1. Frontend Architecture (React-based Terminal Interface)
+Terminal Component Structure
+
+    Custom React terminal component implementing a professional-grade CLI
+    ANSI color support for syntax highlighting and visual feedback
+    Command history management with up/down arrow navigation
+    Tab completion system for commands and parameters
+    Split-screen capability for showing simulation results alongside commands
+
+Command Processing System
+
+    Parser for complex CPU simulation commands
+    Real-time command validation and syntax checking
+    Command categories:
+        Configuration commands (set-cache-size, set-pipeline-depth, etc.)
+        Simulation commands (run-simulation, step-cycle, etc.)
+        Analysis commands (show-metrics, export-report, etc.)
+        Debug commands (show-pipeline-state, trace-instruction, etc.)
+
+2. CPU Simulation Core
+Pipeline Implementation
+
+    Detailed 5-stage pipeline simulation:
+        IF (Instruction Fetch)
+        ID (Instruction Decode)
+        EX (Execute)
+        MEM (Memory Access)
+        WB (Write Back)
+    Hazard detection and handling:
+        Data hazards with forwarding
+        Control hazards
+        Structural hazards
+    Branch prediction simulation with configurable predictors
+
+Cache Simulation
+
+    Multi-level cache hierarchy simulation:
+        Configurable L1 I-cache and D-cache
+        Unified L2 cache
+        Replacement policies (LRU, FIFO, Random)
+        Write-back and write-through policies
+    Memory hierarchy statistics:
+        Hit/miss ratios
+        Access latencies
+        Bandwidth utilization
+
+Performance Metrics Module
+
+    Cycle-accurate statistics:
+        Instructions Per Cycle (IPC)
+        Cache hit rates
+        Branch prediction accuracy
+        Pipeline stall analysis
+    Power consumption estimation:
+        Dynamic power based on activity factors
+        Static power estimation
+        Power efficiency metrics
+
+3. Interactive Features
+Real-time Visualization
+
+    Pipeline state visualization:
+        Instruction flow through stages
+        Hazard highlighting
+        Stall indication
+    Cache state display:
+        Cache line contents
+        Recent access patterns
+        Miss rate graphs
+
+Analysis Tools
+
+    Performance bottleneck identification
+    Suggested optimization strategies
+    Comparative analysis between different configurations
+
+4. Example Usage Scenarios
+
+When you run the simulator, you'll see a professional terminal interface where you can enter commands like:
+
+> load-program example/matrix-multiply.asm
+Loading program... Done.
+
+> set-cache-config --l1d-size 32KB --l1i-size 32KB --l2-size 256KB
+Cache configuration updated.
+
+> run-simulation --cycles 1000
+Running simulation...
+[Progress bar showing simulation progress]
+Completed 1000 cycles.
+
+> show-metrics
+Performance Report:
+- IPC: 1.45
+- L1 D-Cache Hit Rate: 94.2%
+- Branch Prediction Accuracy: 88.7%
+- Average Power Consumption: 2.3W
+
+5. Technical Implementation Details
+Data Structures
+
+    Circular buffers for pipeline stages
+    Hash tables for cache implementation
+    Priority queues for event scheduling
+    Instruction window buffer for out-of-order execution
+
+Algorithms
+
+    Modified Tomasulo algorithm for instruction scheduling
+    LRU implementation using pseudo-LRU tree
+    Branch prediction using hybrid predictors
+    Power estimation using activity-based modeling
+
+Performance Optimizations
+
+    Efficient JavaScript implementations of critical paths
+    Web Workers for parallel simulation processing
+    Optimized data structures for frequent operations
+    Incremental update of statistics
