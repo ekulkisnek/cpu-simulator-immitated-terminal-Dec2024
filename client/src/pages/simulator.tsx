@@ -3,6 +3,7 @@ import { Terminal } from '@/components/CPUSimulator/Terminal';
 import { Pipeline } from '@/components/CPUSimulator/Pipeline';
 import { Commands } from '@/components/CPUSimulator/Commands';
 import { Cache } from '@/components/CPUSimulator/Cache';
+import { CacheLog } from '@/components/CPUSimulator/CacheLog';
 import { Metrics } from '@/components/CPUSimulator/Metrics';
 import { CPUCore } from '@/lib/simulation/cpu-core';
 
