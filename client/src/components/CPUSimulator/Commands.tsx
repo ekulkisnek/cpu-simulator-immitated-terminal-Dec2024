@@ -60,7 +60,7 @@ export function Commands() {
       <h3 className="text-lg font-semibold mt-6 mb-2">Example Programs</h3>
       <div className="space-y-2">
         <div className="p-2 border rounded">
-          <h4 className="font-medium">example1.asm</h4>
+          <h4 className="font-medium">basic_arithmetic.asm</h4>
           <pre className="text-sm bg-gray-50 p-2 mt-1">
             add r1, r2, r3{'\n'}
             sub r4, r1, r5{'\n'}
@@ -68,7 +68,7 @@ export function Commands() {
           </pre>
         </div>
         <div className="p-2 border rounded">
-          <h4 className="font-medium">example2.asm</h4>
+          <h4 className="font-medium">memory_loop.asm</h4>
           <pre className="text-sm bg-gray-50 p-2 mt-1">
             lw r1, 0(r2){'\n'}
             add r3, r1, r4{'\n'}
@@ -76,7 +76,7 @@ export function Commands() {
           </pre>
         </div>
         <div className="p-2 border rounded">
-          <h4 className="font-medium">example3.asm</h4>
+          <h4 className="font-medium">store_compute.asm</h4>
           <pre className="text-sm bg-gray-50 p-2 mt-1">
             sw r1, 4(r2){'\n'}
             add r3, r4, r5{'\n'}

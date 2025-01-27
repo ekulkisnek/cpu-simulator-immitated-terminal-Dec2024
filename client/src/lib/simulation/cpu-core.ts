@@ -35,16 +35,19 @@ export class CPUCore {
 
   public step() {
     this.cycle++;
-    
-    // Execute one cycle of the pipeline
-    this.pipeline.step();
-    
-    // Update metrics
-    this.metrics.push({
-      ipc: this.pipeline.getIPC(),
-      branchAccuracy: this.branchPredictor.getAccuracy(),
-      powerConsumption: this.estimatePowerConsumption(),
-    });
+    const memOp = this.pipeline.step();
+
+    // Handle memory operations
+    if (memOp) {
+      const addr = `0x${Math.floor(Math.random() * 0xFFFF).toString(16)}`;
+      if (memOp.type === 'load') {
+        this.l1DCache.access(addr, false);
+      } else if (memOp.type === 'store') {
+        this.l1DCache.access(addr, true);
+      }
+    }
+
+    this.updateMetrics();
   }
 
   public getMetrics() {
@@ -71,7 +74,7 @@ export class CPUCore {
       this.l1ICache.getActivityFactor() * 0.2 +
       this.l1DCache.getActivityFactor() * 0.2 +
       this.l2Cache.getActivityFactor() * 0.3;
-    
+
     return pipelinePower + cachePower;
   }
 
@@ -89,5 +92,13 @@ export class CPUCore {
     this.l1ICache.configure(l1i);
     this.l1DCache.configure(l1d);
     this.l2Cache.configure(l2);
+  }
+
+  private updateMetrics() {
+    this.metrics.push({
+      ipc: this.pipeline.getIPC(),
+      branchAccuracy: this.branchPredictor.getAccuracy(),
+      powerConsumption: this.estimatePowerConsumption(),
+    });
   }
 }

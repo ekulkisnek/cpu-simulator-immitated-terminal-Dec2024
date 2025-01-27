@@ -63,14 +63,27 @@ export class Pipeline {
 
     // Check for hazards
     this.detectHazards();
+
+    // Return memory operation if current instruction is load/store
+    const currentInstr = this.stages.MEM || '';
+    if (currentInstr && (currentInstr.startsWith('lw') || currentInstr.startsWith('sw'))) {
+      return currentInstr.startsWith('lw') ? { type: 'load', address: this.getAddress(currentInstr) } : { type: 'store', address: this.getAddress(currentInstr) };
+    }
+    return null;
   }
+
+    private getAddress(instruction: string): number {
+        //Extract address from instruction (this is highly simplified and needs improvement for real instructions)
+        const match = instruction.match(/(\d+)/);
+        return match ? parseInt(match[0], 10) : 0;
+    }
 
   private detectHazards() {
     // Data hazards
     if (this.stages.EX && this.stages.ID) {
       const exDest = this.getDestinationRegister(this.stages.EX);
       const idSrc = this.getSourceRegisters(this.stages.ID);
-      
+
       if (idSrc.some(src => src === exDest)) {
         this.hazards.ID = 'RAW Hazard';
         this.stalls.IF = true;
