@@ -1,0 +1,147 @@
+[vite] connecting... client:495:9
+[vite] connected. client:614:15
+Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools chunk-WERSD76P.js:21551:25
+Warning: Encountered two children with the same key, `1737999136345`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+div
+div
+Primitive</Node<@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-K3KIJ3UY.js?v=abd15c1e:135:44
+ScrollAreaViewport<@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-scroll-area.js?v=abd15c1e:116:79
+div
+Primitive</Node<@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-K3KIJ3UY.js?v=abd15c1e:135:44
+Provider@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-K3KIJ3UY.js?v=abd15c1e:292:47
+ScrollArea<@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-scroll-area.js?v=abd15c1e:59:9
+_c@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/src/components/ui/scroll-area.tsx:21:8
+div
+_c@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/src/components/ui/card.tsx:20:8
+Terminal@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/src/components/CPUSimulator/Terminal.tsx:22:25
+div
+div
+div
+div
+div
+Simulator@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/src/pages/simulator.tsx:27:25
+Route@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=abd15c1e:323:13
+Switch@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=abd15c1e:379:14
+Router
+QueryClientProvider@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=abd15c1e:2804:27
+App chunk-WERSD76P.js:521:38
+Warning: Encountered two children with the same key, `1737999136345`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+div
+div
+Primitive</Node<@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-K3KIJ3UY.js?v=abd15c1e:135:44
+ScrollAreaViewport<@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-scroll-area.js?v=abd15c1e:116:79
+div
+Primitive</Node<@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-K3KIJ3UY.js?v=abd15c1e:135:44
+Provider@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-K3KIJ3UY.js?v=abd15c1e:292:47
+ScrollArea<@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-scroll-area.js?v=abd15c1e:59:9
+_c@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/src/components/ui/scroll-area.tsx:21:8
+div
+_c@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/src/components/ui/card.tsx:20:8
+Terminal@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/src/components/CPUSimulator/Terminal.tsx:22:25
+div
+div
+div
+div
+div
+Simulator@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/src/pages/simulator.tsx:27:25
+Route@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=abd15c1e:323:13
+Switch@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=abd15c1e:379:14
+Router
+QueryClientProvider@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=abd15c1e:2804:27
+App 17 chunk-WERSD76P.js:521:38
+Warning: Encountered two children with the same key, `1737999136345`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+div
+div
+Primitive</Node<@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-K3KIJ3UY.js?v=abd15c1e:135:44
+ScrollAreaViewport<@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-scroll-area.js?v=abd15c1e:116:79
+div
+Primitive</Node<@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-K3KIJ3UY.js?v=abd15c1e:135:44
+Provider@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-K3KIJ3UY.js?v=abd15c1e:292:47
+ScrollArea<@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-scroll-area.js?v=abd15c1e:59:9
+_c@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/src/components/ui/scroll-area.tsx:21:8
+div
+_c@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/src/components/ui/card.tsx:20:8
+Terminal@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/src/components/CPUSimulator/Terminal.tsx:22:25
+div
+div
+div
+div
+div
+Simulator@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/src/pages/simulator.tsx:27:25
+Route@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=abd15c1e:323:13
+Switch@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=abd15c1e:379:14
+Router
+QueryClientProvider@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=abd15c1e:2804:27
+App chunk-WERSD76P.js:521:38
+Warning: Encountered two children with the same key, `1737999136345`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+div
+div
+Primitive</Node<@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-K3KIJ3UY.js?v=abd15c1e:135:44
+ScrollAreaViewport<@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-scroll-area.js?v=abd15c1e:116:79
+div
+Primitive</Node<@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-K3KIJ3UY.js?v=abd15c1e:135:44
+Provider@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-K3KIJ3UY.js?v=abd15c1e:292:47
+ScrollArea<@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-scroll-area.js?v=abd15c1e:59:9
+_c@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/src/components/ui/scroll-area.tsx:21:8
+div
+_c@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/src/components/ui/card.tsx:20:8
+Terminal@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/src/components/CPUSimulator/Terminal.tsx:22:25
+div
+div
+div
+div
+div
+Simulator@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/src/pages/simulator.tsx:27:25
+Route@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=abd15c1e:323:13
+Switch@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=abd15c1e:379:14
+Router
+QueryClientProvider@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=abd15c1e:2804:27
+App 3 chunk-WERSD76P.js:521:38
+Warning: Encountered two children with the same key, `1737999136345`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+div
+div
+Primitive</Node<@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-K3KIJ3UY.js?v=abd15c1e:135:44
+ScrollAreaViewport<@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-scroll-area.js?v=abd15c1e:116:79
+div
+Primitive</Node<@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-K3KIJ3UY.js?v=abd15c1e:135:44
+Provider@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-K3KIJ3UY.js?v=abd15c1e:292:47
+ScrollArea<@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-scroll-area.js?v=abd15c1e:59:9
+_c@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/src/components/ui/scroll-area.tsx:21:8
+div
+_c@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/src/components/ui/card.tsx:20:8
+Terminal@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/src/components/CPUSimulator/Terminal.tsx:22:25
+div
+div
+div
+div
+div
+Simulator@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/src/pages/simulator.tsx:27:25
+Route@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=abd15c1e:323:13
+Switch@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=abd15c1e:379:14
+Router
+QueryClientProvider@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=abd15c1e:2804:27
+App chunk-WERSD76P.js:521:38
+Warning: Encountered two children with the same key, `1737999136345`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+div
+div
+Primitive</Node<@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-K3KIJ3UY.js?v=abd15c1e:135:44
+ScrollAreaViewport<@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-scroll-area.js?v=abd15c1e:116:79
+div
+Primitive</Node<@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-K3KIJ3UY.js?v=abd15c1e:135:44
+Provider@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-K3KIJ3UY.js?v=abd15c1e:292:47
+ScrollArea<@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-scroll-area.js?v=abd15c1e:59:9
+_c@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/src/components/ui/scroll-area.tsx:21:8
+div
+_c@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/src/components/ui/card.tsx:20:8
+Terminal@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/src/components/CPUSimulator/Terminal.tsx:22:25
+div
+div
+div
+div
+div
+Simulator@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/src/pages/simulator.tsx:27:25
+Route@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=abd15c1e:323:13
+Switch@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=abd15c1e:379:14
+Router
+QueryClientProvider@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=abd15c1e:2804:27
+App 95 chunk-WERSD76P.js:521:38
