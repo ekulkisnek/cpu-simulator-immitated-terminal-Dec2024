@@ -80,8 +80,22 @@ export function Pipeline({ stages }: PipelineProps) {
 
   return (
     <Card className="p-4">
-      <h3 className="text-lg font-semibold mb-4">Pipeline Status</h3>
-      <svg ref={svgRef} />
+      <h3 className="text-lg font-semibold mb-2">Pipeline Status</h3>
+      <p className="text-sm text-gray-600 mb-4">
+        Visualizes the 5-stage CPU pipeline execution. Each box represents a pipeline stage:
+        IF (Instruction Fetch) → ID (Instruction Decode) → EX (Execute) → 
+        MEM (Memory Access) → WB (Write Back)
+      </p>
+      <div className="border rounded p-4 mb-4">
+        <div className="text-sm space-y-2">
+          <div><span className="font-medium">Blue boxes:</span> Active stages with instructions</div>
+          <div><span className="font-medium">Red boxes:</span> Stalled stages due to hazards</div>
+          <div><span className="font-medium">Empty boxes:</span> Inactive pipeline stages</div>
+        </div>
+      </div>
+      <div className="overflow-x-auto">
+        <svg ref={svgRef} className="min-w-[600px]" />
+      </div>
     </Card>
   );
 }

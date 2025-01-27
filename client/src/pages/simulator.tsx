@@ -35,7 +35,7 @@ export default function Simulator() {
 
   const handleCommand = (command: string) => {
     const [cmd, ...args] = command.split(' ');
-    
+
     switch (cmd) {
       case 'run':
         setRunning(true);
@@ -70,28 +70,54 @@ export default function Simulator() {
   return (
     <div className="min-h-screen bg-gray-50 p-6">
       <div className="max-w-7xl mx-auto space-y-6">
-        <h1 className="text-3xl font-bold text-gray-900">
-          CPU Simulator
-        </h1>
-        
+        <div>
+          <h1 className="text-3xl font-bold text-gray-900 mb-2">
+            CPU Simulator
+          </h1>
+          <p className="text-gray-600">
+            Interactive CPU simulator demonstrating pipelining, caching, and instruction execution.
+            Use the terminal below to control the simulation.
+          </p>
+        </div>
+
         <div className="grid grid-cols-2 gap-6">
           <div className="space-y-6">
-            <Terminal onCommand={handleCommand} />
+            <div className="bg-white p-4 rounded-lg shadow-md">
+              <h2 className="text-lg font-medium text-gray-900 mb-2">Terminal</h2>
+              <p className="text-gray-600 text-sm">Enter commands to control the CPU simulation.  Available commands: run, stop, reset, step, load.  See the Commands section for details and examples.</p>
+              <Terminal onCommand={handleCommand} />
+            </div>
             <div className="grid grid-cols-2 gap-6">
-              <Pipeline stages={metrics.pipelineState || []} />
-              <Commands />
+              <div className="bg-white p-4 rounded-lg shadow-md">
+                <h2 className="text-lg font-medium text-gray-900 mb-2">Pipeline</h2>
+                <p className="text-gray-600 text-sm">Visual representation of the CPU pipeline stages. Each box represents a stage; color indicates status (e.g., green for active, red for stalled).  The pipeline shows instruction flow through the different execution stages.</p>
+                <Pipeline stages={metrics.pipelineState || []} />
+              </div>
+              <div className="bg-white p-4 rounded-lg shadow-md">
+                <h2 className="text-lg font-medium text-gray-900 mb-2">Commands</h2>
+                <p className="text-gray-600 text-sm">List of available commands with example usages.</p>
+                <Commands />
+              </div>
             </div>
           </div>
-          
+
           <div className="space-y-6">
-            <Cache
-              entries={metrics.cacheState?.l1d || []}
-              hitRate={0.95}
-              missRate={0.05}
-            />
-            <Metrics
-              data={metrics.metrics || []}
-            />
+            <div className="bg-white p-4 rounded-lg shadow-md overflow-auto max-h-60"> {/* Added scrollability */}
+              <h2 className="text-lg font-medium text-gray-900 mb-2">Cache (L1 Data)</h2>
+              <p className="text-gray-600 text-sm">Displays the contents of the L1 data cache.  Each entry shows tag, data, valid bit (green for valid, red for invalid), and dirty bit (grey for clean, dark grey for dirty). </p>
+              <Cache
+                entries={metrics.cacheState?.l1d || []}
+                hitRate={0.95}
+                missRate={0.05}
+              />
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow-md">
+              <h2 className="text-lg font-medium text-gray-900 mb-2">Metrics</h2>
+              <p className="text-gray-600 text-sm">Key performance indicators of the CPU simulation, such as clock cycles, instructions executed, and cache statistics.</p>
+              <Metrics
+                data={metrics.metrics || []}
+              />
+            </div>
           </div>
         </div>
       </div>

@@ -61,7 +61,7 @@ export function Terminal({ onCommand }: TerminalProps) {
   };
 
   return (
-    <Card className="h-full flex flex-col bg-black text-green-400 font-mono text-sm">
+    <Card className="h-full flex flex-col bg-white text-black border border-gray-200 font-mono text-sm">
       <ScrollArea className="flex-grow p-4" ref={scrollRef}>
         {history.map(line => (
           <div
