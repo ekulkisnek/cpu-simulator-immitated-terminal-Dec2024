@@ -1,0 +1,31 @@
+[vite] connecting... client:495:9
+[vite] connected. client:614:15
+Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools chunk-WERSD76P.js:21551:25
+Warning: Received NaN for the `children` attribute. If this is expected, cast the value to a string.
+span
+li
+ul
+div
+DefaultTooltipContent2@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/recharts.js?v=abd15c1e:7103:26
+div
+TooltipBoundingBox2@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/recharts.js?v=abd15c1e:7431:21
+Tooltip2@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/recharts.js?v=abd15c1e:7707:21
+div
+ChartLayoutContextProvider2@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/recharts.js?v=abd15c1e:20739:22
+CategoricalChartWrapper2@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/recharts.js?v=abd15c1e:26020:24
+CategoricalChart2
+div
+div
+_c@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/src/components/ui/card.tsx:20:8
+Metrics@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/src/components/CPUSimulator/Metrics.tsx:27:24
+div
+div
+div
+div
+div
+Simulator@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/src/pages/simulator.tsx:27:25
+Route@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=abd15c1e:323:13
+Switch@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=abd15c1e:379:14
+Router
+QueryClientProvider@https://8f1864d8-b174-46d1-ac13-5813b0eb0b73-00-1qzsz6lvk0zoq.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=abd15c1e:2804:27
+App chunk-WERSD76P.js:521:38
