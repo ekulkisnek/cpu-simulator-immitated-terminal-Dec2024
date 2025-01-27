@@ -129,6 +129,12 @@ export default function Simulator() {
               />
             </div>
             <div className="bg-white p-4 rounded-lg shadow-md">
+              <CacheLog 
+                entries={metrics.cacheState?.l1d || []}
+                previousEntries={metrics.previousCacheState?.l1d}
+              />
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow-md">
               <h2 className="text-lg font-medium text-gray-900 mb-2">Metrics</h2>
               <Metrics data={metrics.metrics || []} />
             </div>

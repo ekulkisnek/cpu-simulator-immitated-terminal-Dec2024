@@ -68,6 +68,9 @@ export class CPUCore {
       cacheState: {
         l1d: this.l1DCache.getState(),
       },
+      previousCacheState: {
+        l1d: [...this.l1DCache.getState()],
+      },
       cacheStats: {
         l1d: {
           hitRate: this.l1DCache.getHitRate(),
