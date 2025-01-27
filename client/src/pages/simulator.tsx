@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Terminal } from '@/components/CPUSimulator/Terminal';
 import { Pipeline } from '@/components/CPUSimulator/Pipeline';
+import { Commands } from '@/components/CPUSimulator/Commands';
 import { Cache } from '@/components/CPUSimulator/Cache';
 import { Metrics } from '@/components/CPUSimulator/Metrics';
 import { CPUCore } from '@/lib/simulation/cpu-core';
@@ -76,7 +77,10 @@ export default function Simulator() {
         <div className="grid grid-cols-2 gap-6">
           <div className="space-y-6">
             <Terminal onCommand={handleCommand} />
-            <Pipeline stages={metrics.pipelineState || []} />
+            <div className="grid grid-cols-2 gap-6">
+              <Pipeline stages={metrics.pipelineState || []} />
+              <Commands />
+            </div>
           </div>
           
           <div className="space-y-6">
