@@ -119,22 +119,21 @@ export default function Simulator() {
             </div>
           </div>
 
-          <div className="space-y-6">
-            <div className="bg-white p-4 rounded-lg shadow-md overflow-auto max-h-60"> {/* Added scrollability */}
-              <h2 className="text-lg font-medium text-gray-900 mb-2">Cache (L1 Data)</h2>
-              <p className="text-gray-600 text-sm">Displays the contents of the L1 data cache.  Each entry shows tag, data, valid bit (green for valid, red for invalid), and dirty bit (grey for clean, dark grey for dirty). </p>
+          <div className="grid grid-cols-1 gap-6 w-full">
+            <div className="bg-white p-4 rounded-lg shadow-md">
+              <h2 className="text-lg font-medium text-gray-900 mb-2">L1 Data Cache</h2>
               <Cache
                 entries={metrics.cacheState?.l1d || []}
-                hitRate={0.95}
-                missRate={0.05}
+                hitRate={metrics.cacheStats?.l1d?.hitRate || 0}
+                missRate={metrics.cacheStats?.l1d?.missRate || 0}
               />
             </div>
             <div className="bg-white p-4 rounded-lg shadow-md">
-              <h2 className="text-lg font-medium text-gray-900 mb-2">Metrics</h2>
-              <p className="text-gray-600 text-sm">Key performance indicators of the CPU simulation, such as clock cycles, instructions executed, and cache statistics.</p>
-              <Metrics
-                data={metrics.metrics || []}
-              />
+              <h2 className="text-lg font-medium text-gray-900 mb-2">Pipeline & Metrics</h2>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <Pipeline stages={metrics.pipelineState || []} />
+                <Metrics data={metrics.metrics || []} />
+              </div>
             </div>
           </div>
         </div>

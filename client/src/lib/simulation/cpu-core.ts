@@ -53,10 +53,14 @@ export class CPUCore {
       metrics: this.metrics,
       pipelineState: this.pipeline.getState(),
       cacheState: {
-        l1i: this.l1ICache.getState(),
         l1d: this.l1DCache.getState(),
-        l2: this.l2Cache.getState(),
       },
+      cacheStats: {
+        l1d: {
+          hitRate: this.l1DCache.getHitRate(),
+          missRate: this.l1DCache.getMissRate()
+        }
+      }
     };
   }
 

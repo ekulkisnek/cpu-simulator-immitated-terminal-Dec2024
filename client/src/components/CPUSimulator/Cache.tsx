@@ -17,7 +17,7 @@ interface CacheProps {
 }
 
 export function Cache({ entries, hitRate, missRate }: CacheProps) {
-  const limitedEntries = entries.slice(0, 16); // Limit visible entries
+  const limitedEntries = entries?.slice(0, 8) || []; // Show fewer entries for better visibility
   const svgRef = useRef<SVGSVGElement>(null);
 
   useEffect(() => {
