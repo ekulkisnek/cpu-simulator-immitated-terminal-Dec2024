@@ -93,8 +93,8 @@ export function Pipeline({ stages }: PipelineProps) {
           <div><span className="font-medium">Empty boxes:</span> Inactive pipeline stages</div>
         </div>
       </div>
-      <div className="overflow-x-auto">
-        <svg ref={svgRef} className="min-w-[600px]" />
+      <div className="flex justify-center">
+        <svg ref={svgRef} className="w-full max-w-[600px]" />
       </div>
     </Card>
   );

@@ -120,7 +120,7 @@ export default function Simulator() {
           </div>
 
           <div className="grid grid-cols-1 gap-6 w-full">
-            <div className="bg-white p-4 rounded-lg shadow-md">
+            <div className="bg-white p-4 rounded-lg shadow-md h-[400px] overflow-y-auto">
               <h2 className="text-lg font-medium text-gray-900 mb-2">L1 Data Cache</h2>
               <Cache
                 entries={metrics.cacheState?.l1d || []}
@@ -129,11 +129,8 @@ export default function Simulator() {
               />
             </div>
             <div className="bg-white p-4 rounded-lg shadow-md">
-              <h2 className="text-lg font-medium text-gray-900 mb-2">Pipeline & Metrics</h2>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                <Pipeline stages={metrics.pipelineState || []} />
-                <Metrics data={metrics.metrics || []} />
-              </div>
+              <h2 className="text-lg font-medium text-gray-900 mb-2">Metrics</h2>
+              <Metrics data={metrics.metrics || []} />
             </div>
           </div>
         </div>
