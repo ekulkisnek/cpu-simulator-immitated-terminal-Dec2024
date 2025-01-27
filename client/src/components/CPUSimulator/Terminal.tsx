@@ -19,9 +19,11 @@ export function Terminal({ onCommand }: TerminalProps) {
   const [historyIndex, setHistoryIndex] = useState(-1);
   const [commandHistory, setCommandHistory] = useState<string[]>([]);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const lineIdCounter = useRef(0);
 
   const addLine = (content: string, type: TerminalLine['type'] = 'output') => {
-    setHistory(prev => [...prev, { id: Date.now(), content, type }]);
+    lineIdCounter.current += 1;
+    setHistory(prev => [...prev, { id: lineIdCounter.current, content, type }]);
   };
 
   useEffect(() => {
