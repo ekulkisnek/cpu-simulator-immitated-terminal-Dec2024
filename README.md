@@ -1,5 +1,7 @@
 
-# Full-Stack TypeScript Application
+# Command line CPU simulator
+
+![image](image.png)
 
 A modern full-stack application built with Express, React, and PostgreSQL, featuring authentication, real-time updates, and a CPU simulator interface.
 
